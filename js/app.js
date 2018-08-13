@@ -1,4 +1,11 @@
 function botaoImportar() {
+    //Verifica se já foi criada uma tabela anteriormente e remove caso já exista
+    if (document.getElementsByTagName('table')[0] != null){
+        var tabela = document.getElementsByTagName('table')[0];
+        tabela.remove();
+    }
+
+    //Cria uma nova tabela com novo conteúdo
     var body = document.getElementsByTagName('body')[0];
     var div = document.createElement('div'); //Cria Elemento Div para adição da Table
     div.className="tabela"; //Define a classe do Elemento Div criado
