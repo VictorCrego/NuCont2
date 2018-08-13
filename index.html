@@ -1,8 +1,16 @@
 <html>
     <head>
         <title>NuCont</title>
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
     </head>
     <body>
         <h1>NuCont</h1>
+        <!-- Adiciona a Div Menu com os elementos de entrada para o usuário -->
+        <div class="menu">
+			<textarea id="texto" cols="40" rows="20"></textarea>
+            <br/>
+            <!--Adiciona o botão que chama a função botaoImportar para carregar os dados na table-->
+			<button class="btn btn-primary" onclick="botaoImportar()" style="margin-left: auto; margin-right: auto;">Importar</button>
+		</div>
     </body>
 </html>
